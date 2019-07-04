@@ -1,14 +1,15 @@
 {
-  "name": "natours",
-  "version": "1.0.0",
-  "description": "Natours project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Nikola Lovic",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+	"name": "natours",
+	"version": "1.0.0",
+	"description": "Natours project",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon server.js"
+	},
+	"author": "Nikola Lovic",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"morgan": "^1.9.1"
+	}
 }
