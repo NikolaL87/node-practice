@@ -1,9 +1,9 @@
 const crypto = require('crypto');
-const mongooose = require('mongoose');
+const mongoose = require('mongoose');
 const validator = require('validator');
 const bcrypt = require('bcryptjs');
 
-const userSchema = new mongooose.Schema({
+const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, 'Please tell us your name!']
@@ -88,6 +88,6 @@ userSchema.methods.createPasswordResetToken = function() {
   return resetToken;
 };
 
-const User = mongooose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);
 
 module.exports = User;
