@@ -211,7 +211,6 @@ exports.resetPassword = catchAsync(async (req, res, next) => {
   user.passwordConfirmation = req.body.passwordConfirmation;
   user.passwordResetToken = undefined;
   user.passwordResetExpires = undefined;
-  //console.log(req.body.password, user)
   await user.save();
   // Update changedPassword property for the user
 
