@@ -1075,8 +1075,18 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 7rem;
+  
 }
-
+@media screen and(max-width: 1000px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and(max-width: 768) {
+  .card-container {
+    grid-template-columns: none;
+  }
+}
 .card {
   border-radius: 3px;
   overflow: hidden;
@@ -1095,6 +1105,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .card__header {
   position: relative;
 }
